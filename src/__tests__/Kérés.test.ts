@@ -7,14 +7,17 @@ describe("Kérés osztály unit tesztek: ", () => {
         expect(instance).toBeInstanceOf(Kérés);
     });
 
+    //teszt készítés másik állapotkódra is
     it("Állapotkód", async () => {
         expect(instance.állapotkód).toBe("200");
     });
 
+    //teszt készítés más byteméretre is
     it("Byte mérete", async () => {
         expect(instance.byteMéret).toBe(144114);
     });
 
+    //teszt készítés hamisra is
     it("Domain cím-e", async () => {
         expect(instance.domain).toBe(true);
     });

@@ -19,12 +19,12 @@ export default class Megoldás {
     }
 
     public get összesMéret(): number {
-        let összeg = 0;
+        let byteÖsszeg = 0;
         for (const i of this._kérések) {
-            összeg += i.byteMéret;
+            byteÖsszeg += i.byteMéret;
         }
 
-        return összeg;
+        return byteÖsszeg;
     }
 
     public get domainArány(): number {
