@@ -7,18 +7,31 @@ describe("Kérés osztály unit tesztek: ", () => {
         expect(instance).toBeInstanceOf(Kérés);
     });
 
-    //teszt készítés másik állapotkódra is
     it("Állapotkód", async () => {
         expect(instance.állapotkód).toBe("200");
     });
 
-    //teszt készítés más byteméretre is
+    it("Állapotkód", async () => {
+        expect(instance.állapotkód).toBe("304");
+    });
+
     it("Byte mérete", async () => {
         expect(instance.byteMéret).toBe(144114);
     });
 
-    //teszt készítés hamisra is
+    it("Byte mérete", async () => {
+        expect(instance.byteMéret).toBe(488494);
+    });
+
+    it("Byte mérete", async () => {
+        expect(instance.byteMéret).toBe(0);
+    });
+
     it("Domain cím-e", async () => {
         expect(instance.domain).toBe(true);
+    });
+
+    it("Domain cím-e", async () => {
+        expect(instance.domain).toBe(false);
     });
 });
